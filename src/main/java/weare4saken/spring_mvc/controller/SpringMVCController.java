@@ -18,6 +18,7 @@ public class SpringMVCController {
     public String showInfo(@RequestParam("country") String country,
                            @RequestParam("capital") String capital,
                            Model model) {
+        /*добавление новых атрибутов*/
         model.addAttribute("newCountry", country);
         model.addAttribute("newCapital", capital);
         return "showInfo";
